@@ -31,16 +31,10 @@
             grid-column-start: 4; //4번에서 출발
         }
     }
-    .fnb-list{
-    }
-    .fnb-item{
-        
-    }
     .title{
         display: block;
         margin-bottom: 1.125rem;
     }
-    .sub-list{}
     .sub-item{
         a{
             position: relative;
@@ -204,7 +198,6 @@
             fill: $color-gray1;
         }
     }
-    .corp-area{}
     .corp-list{
         display: flex;
         align-items: center;
