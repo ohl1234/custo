@@ -178,48 +178,6 @@
     }
 
 }
-.sc-about{
-    width: 100%;
-    max-width: 100%;
-    padding: 0 5.3333333333vw;
-    margin-top: 11.125rem;
-    margin-bottom: 6.875rem;
-    @include grid-12;
-    .column-left{
-        grid-column: auto/span 6;
-    }
-    .thumb-box{
-        display: block;
-        width: 100%;
-        overflow: clip;
-        border-radius: 0.5rem;
-        img{
-            width: 110%;
-            height: 110%;
-        }
-    }
-    .column-right{
-        grid-column: auto/span 4;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;  
-        &.start-8{
-            grid-column-start: 8;
-        }
-    }
-    .desc-area{
-        & > *{
-            display: block;
-        }
-    }
-    .title{
-        margin-bottom: 1.125rem;
-    }
-    .desc{
-        margin-bottom: 2.6875rem;
-        color: $color-gray1;
-    }
-}
 .sc-works{
     width: 100%;
     max-width: 100%;
@@ -281,5 +239,95 @@
             grid-column-start: 2;
         }
 
+    }
+}
+.sc-homeapp{
+    padding: 0 1.125rem;
+}
+.group-wrapper{
+    @include grid-12;
+    padding: 11.375rem 3.875rem;
+    background: #4B514D;
+    color: #ffffff;
+    border-radius: 0.5rem;
+}
+.column-left{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translateZ(0);
+    grid-column: auto/span 4;
+    &.start-2{
+        grid-column-start: 2;
+    }
+}
+.title-area{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.column-right{
+    grid-column: auto/span 5;
+    &.start-7{
+        grid-column-start: 7;
+    }
+    img{
+        width: 110%;
+        height: 110%;
+        right: auto;
+        bottom: auto;
+        left: -5%;
+        top: -5%;
+    }
+}
+.thumb-item{
+    & + li{
+        margin-top: 1.75rem;
+    }
+}
+.thumb-box{
+    border-radius: 0.5rem;
+    overflow: clip;
+}
+.sc-about{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 5.3333333333vw;
+    margin-top: 11.125rem;
+    margin-bottom: 6.875rem;
+    @include grid-12;
+    .column-left{
+        grid-column: auto/span 6;
+    }
+    .thumb-box{
+        display: block;
+        width: 100%;
+        overflow: clip;
+        border-radius: 0.5rem;
+        img{
+            width: 110%;
+            height: 110%;
+        }
+    }
+    .column-right{
+        grid-column: auto/span 4;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;  
+        &.start-8{
+            grid-column-start: 8;
+        }
+    }
+    .desc-area{
+        & > *{
+            display: block;
+        }
+    }
+    .title{
+        margin-bottom: 1.125rem;
+    }
+    .desc{
+        margin-bottom: 2.6875rem;
+        color: $color-gray1;
     }
 }
