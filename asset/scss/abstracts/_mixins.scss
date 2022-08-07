@@ -18,3 +18,9 @@
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 1.5rem;
 }
+
+@mixin grid-7{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 1.5rem;
+}
