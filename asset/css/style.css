@@ -814,3 +814,46 @@ input, select, button, fieldset {
 .sc-product .column-right {
   grid-column: auto/span 4;
 }
+
+.sc-about {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 5.3333333333vw;
+  margin-top: 11.125rem;
+  margin-bottom: 6.875rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+}
+.sc-about .column-left {
+  grid-column: auto/span 6;
+}
+.sc-about .thumb-box {
+  display: block;
+  width: 100%;
+  overflow: clip;
+  border-radius: 0.5rem;
+}
+.sc-about .thumb-box img {
+  width: 110%;
+  height: 110%;
+}
+.sc-about .column-right {
+  grid-column: auto/span 4;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+.sc-about .column-right.start-8 {
+  grid-column-start: 8;
+}
+.sc-about .desc-area > * {
+  display: block;
+}
+.sc-about .title {
+  margin-bottom: 1.125rem;
+}
+.sc-about .desc {
+  margin-bottom: 2.6875rem;
+  color: #8E9194;
+}

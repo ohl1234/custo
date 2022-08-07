@@ -178,3 +178,45 @@
     }
 
 }
+.sc-about{
+    width: 100%;
+    max-width: 100%;
+    padding: 0 5.3333333333vw;
+    margin-top: 11.125rem;
+    margin-bottom: 6.875rem;
+    @include grid-12;
+    .column-left{
+        grid-column: auto/span 6;
+    }
+    .thumb-box{
+        display: block;
+        width: 100%;
+        overflow: clip;
+        border-radius: 0.5rem;
+        img{
+            width: 110%;
+            height: 110%;
+        }
+    }
+    .column-right{
+        grid-column: auto/span 4;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;  
+        &.start-8{
+            grid-column-start: 8;
+        }
+    }
+    .desc-area{
+        & > *{
+            display: block;
+        }
+    }
+    .title{
+        margin-bottom: 1.125rem;
+    }
+    .desc{
+        margin-bottom: 2.6875rem;
+        color: $color-gray1;
+    }
+}
