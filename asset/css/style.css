@@ -637,7 +637,7 @@ input, select, button, fieldset {
   color: #fff;
   overflow: hidden;
 }
-.sc-home .group-wrap {
+.sc-home .group-flex1 {
   position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -735,4 +735,82 @@ input, select, button, fieldset {
 .sc-smart .text {
   margin-top: 1.125rem;
   color: #8E9194;
+}
+
+.sc-product {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20.1875rem;
+  margin-bottom: 17.375rem;
+  padding: 0 5.3333333333vw;
+  overflow: clip;
+}
+.sc-product .group-flex2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+}
+.sc-product .desc-area {
+  grid-column: auto/span 3;
+}
+.sc-product .title-area {
+  grid-column: auto/span 7;
+}
+.sc-product .title-area.start-6 {
+  grid-column-start: 6;
+}
+.sc-product .group-flex5 {
+  margin-top: 5.125rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+}
+.sc-product .group-flex5 img {
+  width: 110%;
+  height: 110%;
+  right: auto;
+  bottom: auto;
+  left: -5%;
+  top: -5%;
+  transform: translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  cursor: none;
+  border-radius: 0.5rem;
+}
+.sc-product .column-left {
+  grid-column: auto/span 8;
+}
+.sc-product .column-left .thumb-box {
+  display: block;
+  width: 100%;
+  overflow: clip;
+  border-radius: 0.5rem;
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+  transition: clip-path 0.6s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-clip-path 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.sc-product .column-left .thumb-box:hover {
+  -webkit-clip-path: inset(0.625rem round 1.25rem);
+  clip-path: inset(0.625rem round 1.25rem);
+}
+.sc-product .column-left .thumb-box:hover img {
+  transform: scale(1.05) translateZ(0);
+}
+.sc-product .info-box {
+  display: flex;
+  align-items: baseline;
+  margin-top: 2rem;
+}
+.sc-product .product-info {
+  font-size: max(2.6666666667vw, 30px);
+  line-height: 1.25;
+}
+.sc-product .price {
+  margin-left: 1.4375rem;
+  font-size: max(1.4vw, 20px);
+  line-height: 1.4285714286;
+  color: #8E9194;
+}
+.sc-product .column-right {
+  grid-column: auto/span 4;
 }
