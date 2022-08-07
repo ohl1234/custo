@@ -315,11 +315,6 @@ input, select, button, fieldset {
   z-index: 1;
 }
 
-.container {
-  padding-top: 500px;
-  background-color: #8E9194;
-}
-
 .footer {
   max-width: 100%;
   width: 100%;
@@ -364,7 +359,7 @@ input, select, button, fieldset {
   line-height: 1.619047619;
   color: #8E9194;
 }
-.footer .sub-item a::before {
+.footer .sub-item a::before, .footer .sub-item a::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -379,18 +374,8 @@ input, select, button, fieldset {
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .footer .sub-item a::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #8E9194;
   opacity: 1;
   transform-origin: right;
-  transform: scaleX(0) translateZ(0);
-  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .footer .sub-item a:hover::before {
   opacity: 1;
@@ -533,9 +518,8 @@ input, select, button, fieldset {
   font-size: max(1.2666666667vw, 19px);
   line-height: 1.4210526316;
 }
-.footer .link-corp::before {
+.footer .link-corp::before, .footer .link-corp::after {
   content: "";
-  display: inline-block;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -548,18 +532,9 @@ input, select, button, fieldset {
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .footer .link-corp::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: #8E9194;
   opacity: 1;
   transform-origin: right;
   transform: scaleX(0) translateZ(0);
-  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .footer .link-corp:hover::before {
   opacity: 1;
@@ -568,4 +543,88 @@ input, select, button, fieldset {
 .footer .link-corp:hover::after {
   opacity: 0;
   transform: scale(1) translateZ(0);
+}
+
+.link-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 21.1333333333vw;
+  margin-top: 2.875rem;
+  padding-bottom: 0.9375rem;
+  overflow: hidden;
+  font-size: max(1.4vw, 20px);
+  line-height: 1.4285714286;
+}
+.sc-home .link-btn {
+  color: #fff;
+}
+.link-btn::before, .link-btn::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  transform-origin: right;
+  transform: scaleX(1) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+}
+.sc-home .link-btn::before, .sc-home .link-btn::after {
+  background: #fff;
+}
+.link-btn::after {
+  transform-origin: left;
+  transform: scaleX(0) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.link-btn:hover::before {
+  transform: scaleX(0) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.link-btn:hover::after {
+  transform: scaleX(1) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0.2s;
+}
+.link-btn:hover span {
+  transform: translateX(2rem) translateZ(0);
+}
+.link-btn span {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.link-btn span::before, .link-btn span::after {
+  content: "→";
+  display: inline-block;
+}
+.link-btn span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-2rem) translateZ(0);
+  transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.link-btn span::after {
+  margin-left: 2.25rem;
+}
+
+.sc-title {
+  display: block;
+  margin: 0;
+  line-height: 1;
+  min-height: 0;
+  font-size: max(4vw, 40px);
+  line-height: 1.046875;
+}
+
+.sc-home {
+  width: 100%;
+  height: 100vh;
+  background-color: #A7AAAD;
 }
