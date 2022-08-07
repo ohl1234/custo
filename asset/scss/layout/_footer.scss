@@ -8,7 +8,7 @@
     min-height: 0;
     font-size: max(1.4vw, 20px);
     line-height: 1.4285714286;
-    .group-flex9{
+    .group-flex7{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(12, 1fr);
@@ -133,7 +133,7 @@
         line-height: 1.375;
         color: $color-gray2;
     }
-    .group-flex10{
+    .group-flex8{
         display: flex;
         justify-content: space-between;   
         align-items: center;

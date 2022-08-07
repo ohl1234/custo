@@ -326,7 +326,7 @@ input, select, button, fieldset {
   font-size: max(1.4vw, 20px);
   line-height: 1.4285714286;
 }
-.footer .group-flex9 {
+.footer .group-flex7 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -451,7 +451,7 @@ input, select, button, fieldset {
   line-height: 1.375;
   color: #A7AAAD;
 }
-.footer .group-flex10 {
+.footer .group-flex8 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -625,6 +625,52 @@ input, select, button, fieldset {
 
 .sc-home {
   width: 100%;
+  max-width: 100%;
   height: 100vh;
   background-color: #A7AAAD;
+  padding: 0 5.3333333333vw;
+  color: #fff;
+  overflow: hidden;
+}
+.sc-home .group-wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+  width: 100%;
+  height: 100%;
+  padding-top: 18vh;
+}
+.sc-home .title-area {
+  grid-column: auto/span 5;
+  z-index: 6;
+}
+.sc-home .home-logo-area {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+}
+.sc-home .home-logo-area svg {
+  width: 100%;
+  height: auto;
+  fill: #fff;
+}
+.sc-home .thumb-area {
+  position: absolute;
+  top: 18vh;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.sc-home .thumb-area img {
+  position: absolute;
+  left: 50%;
+  top: 16.5vh;
+  width: 39.4666666667vw;
+  transform-origin: top;
+  transform: translateX(-50%) scale(1) translateZ(0);
 }
