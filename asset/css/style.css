@@ -623,6 +623,11 @@ input, select, button, fieldset {
   line-height: 1.046875;
 }
 
+.container {
+  font-size: max(1.4vw, 20px);
+  line-height: 1.4285714286;
+}
+
 .sc-home {
   width: 100%;
   max-width: 100%;
@@ -673,4 +678,61 @@ input, select, button, fieldset {
   width: 39.4666666667vw;
   transform-origin: top;
   transform: translateX(-50%) scale(1) translateZ(0);
+}
+
+.sc-smart {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 7.1875rem;
+  padding: 0 5.3333333333vw;
+  overflow: clip;
+}
+.sc-smart .group-flex2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+}
+.sc-smart .desc-area {
+  grid-column: auto/span 3;
+}
+.sc-smart .title-area {
+  grid-column: auto/span 7;
+}
+.sc-smart .title-area.start-6 {
+  grid-column-start: 6;
+}
+.sc-smart .group-flex3 {
+  margin-top: 6.25rem;
+  margin-bottom: 4.8125rem;
+}
+.sc-smart .swiper-slide {
+  width: calc(41.6666666667% - 0.75rem);
+  margin-right: 1.5rem;
+}
+.sc-smart .swiper-slide img {
+  width: 120%;
+  height: 120%;
+  right: auto;
+  bottom: auto;
+  left: -10%;
+  top: -10%;
+  border-radius: 0.5rem;
+}
+.sc-smart .group-flex4 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+}
+.sc-smart .text-area {
+  grid-column: auto/span 5;
+}
+.sc-smart .text-area.start-6 {
+  grid-column-start: 6;
+}
+.sc-smart .text-box + div {
+  margin-top: 4.375rem;
+}
+.sc-smart .text {
+  margin-top: 1.125rem;
+  color: #8E9194;
 }
