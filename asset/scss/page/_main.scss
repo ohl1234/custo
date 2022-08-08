@@ -55,10 +55,10 @@
     width: 100%;
     max-width: 100%;
     margin-top: 7.1875rem;
-    padding: 0 5.3333333333vw;
     overflow: clip;
     .group-flex2{
         @include grid-12;        
+        padding: 0 5.3333333333vw;
     }
     .desc-area{
         grid-column: auto/span 3;
@@ -70,8 +70,12 @@
         }
     }
     .group-flex3{
+        position: relative;
         margin-top: 6.25rem;
         margin-bottom: 4.8125rem;
+    }
+    .slide-area{
+        padding-left: 5.3333333333vw;
     }
     .swiper-slide{
         width: calc(41.6666666667% - 0.75rem);
@@ -88,6 +92,7 @@
     }
     .group-flex4{
         @include grid-12;
+        padding: 0 5.3333333333vw;
     }
     .text-area{
         grid-column: auto/span 5;

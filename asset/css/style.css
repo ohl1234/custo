@@ -684,13 +684,13 @@ input, select, button, fieldset {
   width: 100%;
   max-width: 100%;
   margin-top: 7.1875rem;
-  padding: 0 5.3333333333vw;
   overflow: clip;
 }
 .sc-smart .group-flex2 {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1.5rem;
+  padding: 0 5.3333333333vw;
 }
 .sc-smart .desc-area {
   grid-column: auto/span 3;
@@ -702,8 +702,12 @@ input, select, button, fieldset {
   grid-column-start: 6;
 }
 .sc-smart .group-flex3 {
+  position: relative;
   margin-top: 6.25rem;
   margin-bottom: 4.8125rem;
+}
+.sc-smart .slide-area {
+  padding-left: 5.3333333333vw;
 }
 .sc-smart .swiper-slide {
   width: calc(41.6666666667% - 0.75rem);
@@ -722,6 +726,7 @@ input, select, button, fieldset {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1.5rem;
+  padding: 0 5.3333333333vw;
 }
 .sc-smart .text-area {
   grid-column: auto/span 5;
